@@ -22,7 +22,7 @@ class ImageController extends Controller
         $request->image->move(public_path('images'), $imageName);
 
         return back()
-            ->with('success', 'You have successfully upoloaded an image!')
+            ->with('success', 'You have successfully uploaded an image!')
             ->with('image', $imageName);
     }
 }
